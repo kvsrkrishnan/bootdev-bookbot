@@ -12,5 +12,18 @@ print("Finished Reading 'Frankenstein'")
 words = file_contents.split()
 
 # Count of all words in the string
-print(len(words))
+print("Total words:" + str(len(words)))
+
+# Count of all letters in the string
+stringLower = file_contents.lower()
+
+# Create a List / Set to get unique list of characters
+# Set removes duplicates & creates a distinct immutable values that are unordered.
+# Create List & Sort
+stringList = sorted(list(set(stringLower)))
+# print(stringList)
+
+# Occurence of a substring in the main string
+for charac in stringList:
+    print(charac + ":" + str(stringLower.count(charac)))
 
