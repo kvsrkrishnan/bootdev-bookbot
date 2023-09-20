@@ -33,6 +33,7 @@ alphaDictionary = dict()
 for alphabet in alphabets1:
     alphacount = stringLower.count(alphabet) # Get count
     alphaDictionary[alphabet] = alphacount # Create a new index Add to dictionary
+print("\nUnsorted Output:")
 print(alphaDictionary)
 
 
@@ -46,7 +47,7 @@ for alphabet2 in alphabets2:
     # alphacount1.add(stringLower.count(alphabet)) # Store all the values in set- alternate logic.
     alphacount2 = stringLower.count(alphabet2) # Get count
     alphaDictionary2[alphabet2] = alphacount2 # Create a new index Add to dictionary
-
+print("\nSorted Output:")
 print(alphaDictionary2)
 
 
@@ -57,15 +58,14 @@ for alphabet in alphabets2:
     alphacount1.add(stringLower.count(alphabet)) # Store all the values in set- alternate logic.
 """
 
-"""
-# Logic 3 - Get count of each alphabet in the String
+
+# Logic 3 - Get count of each character in the String
 # Create a List / Set to get unique list of characters
 # Set removes duplicates & creates a distinct immutable values that are unordered.
 # Create List & Sort
 stringList = sorted(list(set(stringLower)))
 # print(stringList)
-
+print("\nSorted Output - All Characters:")
 # Occurence of a substring in the main string
 for charac in stringList:
-    print(charac + ":" + str(stringLower.count(charac)))
-"""
+    print(charac + ": " + str(stringLower.count(charac)))
